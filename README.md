@@ -145,3 +145,73 @@ from operator import mul
 
 factorial = lambda n: reduce(mul, range(1, n+1), 1)
 print(f"5! = {factorial(5)}")
+
+
+### Rust — Memory Safety without GC
+
+fn main() {
+    let numbers = vec![1, 2, 3, 4, 5];
+    let sum: i32 = numbers.iter().sum();
+    println!("Sum = {}", sum);
+}
+
+
+
+### Haskell — Pure Functional Beauty
+
+Haskellfactorial :: Integer -> Integer
+factorial 0 = 1
+factorial n = n * factorial (n - 1)
+
+main = print $ factorial 10
+
+
+### Go — Simple & Concurrent
+
+Gopackage main
+import "fmt"
+
+func main() {
+    ch := make(chan string)
+    go func() { ch <- "Hello from Goroutine!" }()
+    fmt.Println(<-ch)
+}
+
+
+
+
+###TypeScript + React — Modern Frontend
+
+tsximport { useState } from "react";
+
+export default function Counter() {
+  const [count, setCount] = useState(0);
+  return (
+    <button onClick={() => setCount(c => c + 1)}>
+      Count: {count}
+    </button>
+  );
+}
+
+
+###Solidity — Smart Contracts
+
+solidity// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract HelloWorld {
+    string public message = "Hello, Blockchain!";
+}
+
+
+### Brainfuck — Esoteric Fun
+
+brainfuck++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
+
+
+###SQL — Data is King
+
+SQLSELECT language, COUNT(*) as projects
+FROM my_life
+GROUP BY language
+ORDER BY projects DESC;
